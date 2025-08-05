@@ -17,12 +17,12 @@ public class AccountEntity {
     @Column(name = "username", unique = true, nullable = false)
     private String username;
 
-    @Column(name = "firstName")
+    @Column(name = "firstname")
     private String firstName;
 
-    @Column(name = "lastName")
+    @Column(name = "lastname")
     private String lastName;
-
-    @Column(name = "password", nullable = false)
-    private String password;
+//
+//    @Column(name = "password", nullable = false)
+//    private String password;
 }

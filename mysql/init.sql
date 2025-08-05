@@ -1,3 +1,5 @@
+-- noinspection SqlNoDataSourceInspectionForFile
+
 -- Drop the database if it already exists
 DROP DATABASE IF EXISTS microservice;
 -- Create database
