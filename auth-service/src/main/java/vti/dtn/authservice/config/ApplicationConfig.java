@@ -30,6 +30,6 @@ public class ApplicationConfig {
     public UserDetailsService userDetailsService() {
         return username ->
                 userRepository.findByUsername(username)
-                .orElseThrow(() -> new RuntimeException("User not found"));
+                        .orElseThrow(() -> new RuntimeException("User not found"));
     }
 }

@@ -22,7 +22,4 @@ public class AccountEntity {
 
     @Column(name = "lastname")
     private String lastName;
-//
-//    @Column(name = "password", nullable = false)
-//    private String password;
 }

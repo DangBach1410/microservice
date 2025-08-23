@@ -18,6 +18,11 @@ public class UserService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
 
+    public UserEntity findByUsername(String username) {
+        Optional<UserEntity> userOptional = userRepository.findByUsername(username);
+        return userOptional.orElse(null);
+    }
+
     public RegisterResponse registerUser(RegisterRequest request) {
         String email = request.getEmail();
         String username = request.getUsername();
